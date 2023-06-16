@@ -31,12 +31,15 @@ def takeScreenshot():
         >1. use X if DISPLAY variable exists and XDG_SESSION_TYPE variable != "wayland"
         >2. use Wayland if 1. is not successful
 
+        # D-Bus
+        Discuss:
+        - https://stackoverflow.com/questions/72216896/how-can-i-get-a-screenshot-on-wayland-with-pure-python
+
         # Other
         sch: https://www.google.com/search?q=python+take+screenshot+wayland
-
-        discuss:
+        
+        Discuss.issue:
         - https://github.com/python-pillow/Pillow/issues/6312
-        - https://stackoverflow.com/questions/72216896/how-can-i-get-a-screenshot-on-wayland-with-pure-python
         """
         print("Help")
 
