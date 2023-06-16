@@ -10,8 +10,35 @@ def setup():
 
 
 def takeScreenshot():
-    screenshot = ImageGrab.grab()
-    screenshot.show()
+    def X11():
+        """
+        https://nitratine.net/blog/post/how-to-take-a-screenshot-in-python-using-pil/
+        """
+        screenshot = ImageGrab.grab()
+        screenshot.show()
+
+    def Wayland():
+        """
+        # Favorite: https://github.com/ponty/pyscreenshot
+        >[Wayland](https://github.com/ponty/pyscreenshot#wayland)
+        >Wayland is supported with these setups:
+        >
+        >1. using D-Bus (org.freedesktop.portal.Screenshot) on any desktop with xdg-desktop-portal.
+        >2. using D-Bus (org.gnome.Shell.Screenshot) on GNOME.
+        >3. using Grim on any Wayland compositor with wlr-screencopy-unstable-v1 support. (GNOME:no, KDE:no, Sway:yes)
+        >If both Wayland and X are available then Wayland is preferred because Xwayland can not be used for screenshot. Rules for decision:
+        >
+        >1. use X if DISPLAY variable exists and XDG_SESSION_TYPE variable != "wayland"
+        >2. use Wayland if 1. is not successful
+
+        # Other
+        sch: https://www.google.com/search?q=python+take+screenshot+wayland
+
+        discuss:
+        - https://github.com/python-pillow/Pillow/issues/6312
+        - https://stackoverflow.com/questions/72216896/how-can-i-get-a-screenshot-on-wayland-with-pure-python
+        """
+        print("Help")
 
 
 def openInCrop(file):
