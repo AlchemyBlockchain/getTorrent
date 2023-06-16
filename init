@@ -1,0 +1,3 @@
+py=src/python
+ln -srf $py/getTorrent ..
+ln -srf $py/cropImg ..
