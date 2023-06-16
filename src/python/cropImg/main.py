@@ -45,7 +45,14 @@ def takeScreenshot():
 
 
 def openInCrop(file):
-    subprocess.call(["xdg-open", f"{screenshot_dir}/{file}"])
+    def openShot():
+        """
+        https://www.askdavetaylor.com/how-can-i-easily-crop-a-photograph-in-ubuntu-linux/
+        """
+        subprocess.call(["openshot-qt", f"{screenshot_dir}/{file}"])
+
+    def default():
+        subprocess.call(["xdg-open", f"{screenshot_dir}/{file}"])
 
 
 def installOpenshot():
