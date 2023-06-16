@@ -1,2 +1,2 @@
-# getTorrent
+# libTorrent
 Library to manage Torrents!

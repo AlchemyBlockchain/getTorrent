@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../cropImg/.idea/cropImg.iml" filepath="$PROJECT_DIR$/../cropImg/.idea/cropImg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/getTorrents.iml" filepath="$PROJECT_DIR$/.idea/getTorrents.iml" />
+    </modules>
+  </component>
+</project>
